@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang = "eng">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+              background-color: #D7E7FF;
+            }
+            .box{
+              background-color: #353535;
+              width:device-width;
+              height: 60px;
+              text-align: center;
+              color: #fff;
+            }
+            .box h1{
+              padding-top: 8px;
+              font-family: 'Times New Roman', Times, serif;
+              
+            }
+            .view{
+              padding-top: 10px;
+            }
+
+            .view .text{
+              margin-left: 40px;
+              text-align: justify;
+            }
+            .view .text p{
+              font-family: 'Times New Roman', Times, serif;
+              color: black;
+              font-weight: 600;
+              width: 500px;
+
+              
+            }
+
+            .view .text .b_input{
+              background-color: #68818e;
+              text-align: center;
+              color: #fff;
+              text-align: center;
+              max-width: max-content;
+              padding: 6px 14px;
+              font-size: 15px; 
+              border: 0px;
+              cursor: pointer;
+              outline: none;
+              margin-top: 20px;
+              margin-left: 35px;
+            }
+            .view .text .b_input:hover{
+              background: #586d78;
+            }
+            .img{
+              width:"200px";
+              height:"200px";
+            }
+            .view{
+              margin-bottom: 15px;
+              display: flex;
+              align-items: center;
+            }
+            </style>
+    </head>
+    <body>
+      <div class="box" >
+        <h1>Get the Accurate Resale Value of your Car!!</h1>
+      </div>
+        
+   
+        <form action = "/predict" method = "post">
+          <div class="view">
+            <img class="img" src="../static/Images/car.jpg"  alt="image is not available">
+            <div class="text">
+              <p>
+                With difficult economic conditions, it is likely that sales of reconditioned second-hand caes will increasee. In most of the countries, it is common to lease a car rather than buying it outright. A lease is a binding contract between a buyer and a seller in which the buyer must pay fixed instalments for a pre-defined number of months/years to the seller/financer. After the lease period is over, the buyer has the possibility to buy the car at its residual value, i.e. its expected resale value. Thus, this application is of commercial interest to seller/financers to be able to predict the residual value of cars with accuracy.
+              </p>
+              <input class="b_input" type="submit" value="WANT TO KNOW THE RESALE VALUE OF YOUR CAR??">
+              
+            </div>
+            
+          </div>
+        
+        </form> 
+    </body>
+</html>
